@@ -19,9 +19,9 @@ resource "aws_launch_template" "webserver_launch_template" {
                 yum install -y httpd
                 mkdir website-folder
                 cd website-folder/
-                wget https://github.com/Helen-Chuks/food-webapp/archive/refs/heads/master.zip
+                wget https://github.com/Eng-Ifeanyi/website-deployment-ec2/archive/refs/heads/master.zip
                 unzip master.zip
-                cd Static-website---food-master/
+                cd website-deployment-ec2-master/
                 mv * /var/www/html/
                 cd /var/www/html/
                 systemctl enable httpd

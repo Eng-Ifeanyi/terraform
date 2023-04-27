@@ -1,7 +1,7 @@
 # create application load balancer
 # terraform aws create application load balancer
 resource "aws_lb" "application_load_balancer" { 
-  name               = "dev-app-load-balancer"
+  name               = "Taste-of-Nigeria"
   internal           = false
   load_balancer_type = "application"
   security_groups    = [aws_security_group.alb-sg.id]
